@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0">PC Shop</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-loja" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#produtos" class="nav-link">
+                            <i class="bi bi-pc-display me-1"></i>
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+    <section id="sobre-a-loja">
+        <div class="carousel slide" data-bs-slide="carousel" id="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="images/placavideo.webp" class="d-block w-100" alt="foto de uma placa de video">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/i9.jpg" class="d-block w-100" alt="imagem de um i9">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/placa-de-video-computador.jpg" class="d-block w-100" alt="imagem de um pc">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <div class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="images/loja.jpg" class="d-block w-100 rounded" alt="loja">
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="section-title">Sobre <span>a loja</span></h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim natus reiciendis quia! Esse qui asperiores nemo? Facilis vero doloribus tempora, maiores iusto enim quos, hic sed molestiae, minima ad? Rerum.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deserunt dolor nulla ab blanditiis porro odit aperiam, illo, aut qui ratione. Velit delectus officia at error blanditiis temporibus voluptatum quasi!
+                        </p>
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 1</li>
+                            <li>Item 1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="produtos" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center mb-5">
+                    Produtos</span>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <aside>
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#placas-de-video" class="fw-bold text-start nav-link  active">Placas de vídeos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#processadores" class="fw-bold text-start nav-link ">Processadores</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#gabinetes" class="fw-bold text-start nav-link ">Gabinetes</button>
+                        </nav>
+                    </aside>
+                </div>
+                <div class="col-md-10">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="placas-de-video">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/placa-de-video-rtx-4060-ti-ventus-msi-nvidia-geforce-8-gb-gddr6-dlss-ray-tracing_1684770175_gg.jpg" alt="RTX 4090">
+                                    <h5 class=" fw-bold mt-2">rtx 4060ti</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/3060ti.png" alt="Suco de laranja">
+                                    <h5 class=" fw-bold mt-2">rtx 3060ti</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/placa-de-video-rtx-4060-ti-ventus-msi-nvidia-geforce-8-gb-gddr6-dlss-ray-tracing_1684770175_gg.jpg" alt="Coca-cola">
+                                    <h5 class=" fw-bold mt-2">rtx 4060ti</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/3060ti.png" alt="Suco de laranja">
+                                    <h5 class=" fw-bold mt-2">rtx 3060ti</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/placa-de-video-rtx-4060-ti-ventus-msi-nvidia-geforce-8-gb-gddr6-dlss-ray-tracing_1684770175_gg.jpg" alt="Coca-cola">
+                                    <h5 class=" fw-bold mt-2">RX 580</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/3060ti.png" alt="Suco de laranja">
+                                    <h5 class=" fw-bold mt-2">rtx 3060ti</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/placa-de-video-rtx-4060-ti-ventus-msi-nvidia-geforce-8-gb-gddr6-dlss-ray-tracing_1684770175_gg.jpg" alt="Coca-cola">
+                                    <h5 class=" fw-bold mt-2">RX 580</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/3060ti.png" alt="Suco de laranja">
+                                    <h5 class=" fw-bold mt-2">rtx 3060ti</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/placa-de-video-rtx-4060-ti-ventus-msi-nvidia-geforce-8-gb-gddr6-dlss-ray-tracing_1684770175_gg.jpg" alt="Coca-cola">
+                                    <h5 class=" fw-bold mt-2">RX 580</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/3060ti.png" alt="Suco de laranja">
+                                    <h5 class=" fw-bold mt-2">rtx 3060ti</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="processadores">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/intel.jpg" alt="i9">
+                                    <h5 class=" fw-bold mt-2">i9</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/intel.jpg"alt="i9">
+                                    <h5 class=" fw-bold mt-2">i9</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="gabinetes">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/gabinete.webp" alt="gabinte">
+                                    <h5 class=" fw-bold mt-2">Gabinete</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center">Fale conosco</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <form action="">
+                        <div>
+                            <label for="nome" class="form-label">Seu nome</label>
+                            <input type="text" id="nome" class="form-control" required>
+                        </div>
+                        <div>
+                            <label for="email" class="form-label">Seu nome</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div>
+                            <label for="telefone" class="form-label">Seu nome</label>
+                            <input type="tel" id="telefone" class="form-control" required>
+                        </div>
+                        <div>
+                            <label for="mensagem" class="form-label">Seu nome</label>
+                            <textarea class="form-control" id="mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <h3 class="section-title fs-4 ">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            Redes sociais
+                        </h3>
+                        <ul class="social-links">
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5 mr-1 me-1">
+                                <a href="#">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <h3 class="section-title fs-4 ">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exempo n 156, Bairro Bootstrap - Goiania
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

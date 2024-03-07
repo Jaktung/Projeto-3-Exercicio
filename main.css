@@ -1,0 +1,30 @@
+body{
+    font: Roboto, sans-serif;
+}
+
+.navbar{
+    background-color: #373636;
+}
+
+.nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover{
+    color: #15aaff;
+}
+
+#produtos{
+    background-color: #d4d4d4;
+}
+
+.navbar-toggler{
+    background-color: #15aaff;
+}
+ 
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+}
